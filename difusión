@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Redes Sociales UPECE</title>
+
+<style>
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #EDD1AA;
+    margin: 0;
+    padding: 0;
+}
+
+.upece-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px 25px 40px;
+    box-shadow: 0 12px 30px rgba(0,0,0,.12);
+    text-align: center;
+    animation: fadeIn 1s ease forwards;
+    opacity: 0;
+}
+
+/* LOGOTIPOS */
+.logos {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.logos img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+}
+
+/* TITULOS */
+h2 {
+    color: #850337;
+    margin: 10px 0 10px;
+    font-size: 32px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+p {
+    color: #696968;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+/* REDES */
+.social-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+}
+
+.social-btn {
+    background: #696968;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 22px;
+    font-size: 14px;
+    font-weight: 600;
+    min-width: 140px;
+    text-align: center;
+    transition: all .25s ease;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: cardIn .7s ease forwards;
+}
+
+.social-btn:nth-child(1){animation-delay:.2s;}
+.social-btn:nth-child(2){animation-delay:.35s;}
+.social-btn:nth-child(3){animation-delay:.5s;}
+.social-btn:nth-child(4){animation-delay:.65s;}
+.social-btn:nth-child(5){animation-delay:.8s;}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0,0,0,.25);
+    filter: brightness(1.1);
+}
+
+/* FOOTER */
+footer {
+    margin-top: 35px;
+    font-size: 13px;
+    color: #696968;
+}
+
+/* ANIMACIONES */
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+@keyframes cardIn {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="upece-container">
+
+    <!-- LOGOTIPOS INSTITUCIONALES -->
+    <div class="logos">
+        <img src="/mnt/data/GOB+SEV+UPECE+CORAZÓN 3.png" alt="Gobierno de Veracruz, SEV y UPECE">
+    </div>
+
+    <h2>CONECTA CON LA UPECE</h2>
+    <p>Información, campañas y contenidos oficiales de la Unidad de Planeación, Evaluación y Control Educativo.</p>
+
+    <div class="social-grid">
+        <a class="social-btn" href="https://www.facebook.com/upeceveracruz/" target="_blank">Facebook</a>
+        <a class="social-btn" href="https://www.tiktok.com/@upeceoficial?is_from_webapp=1&sender_device=pc" target="_blank">TikTok</a>
+        <a class="social-btn" href="https://x.com/UPECE_SEV" target="_blank">X</a>
+        <a class="social-btn" href="https://www.youtube.com/@UPECEOFICIAL" target="_blank">YouTube</a>
+        <a class="social-btn" href="https://www.sev.gob.mx/upece/" target="_blank">Micrositio UPECE</a>
+    </div>
+
+    <footer>
+        © 2026 · Secretaría de Educación de Veracruz · Unidad de Planeación, Evaluación y Control Educativo
+    </footer>
+
+</div>
+
+</body>
+</html>
